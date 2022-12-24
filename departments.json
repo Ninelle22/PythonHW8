@@ -1,0 +1,17 @@
+[
+{
+"ID_department":1,
+"Id_department_head":3,
+"Name_department":"Отдел закупок"
+},
+{
+"ID_department":2,
+"Id_department_head":1,
+"Name_department":"Отдел продаж"
+},
+{
+"ID_department":3,
+"Id_department_head":4,
+"Name_department":"Технологический отдел"
+}
+]

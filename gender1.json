@@ -1,0 +1,10 @@
+[
+ {
+  "ID_gender":false,
+  "gender":"мужской"
+ },
+ {
+  "ID_gender":true,
+  "gender":"женский"
+ }
+]
