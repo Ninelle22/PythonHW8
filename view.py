@@ -1,4 +1,5 @@
 import read_write
+
 def View_Menu():
     print ('Веберите таблицу, которую необходимо отобразить: ')
     print ('1 - Таблица сотрудников с должностями и отделами')
@@ -121,19 +122,19 @@ def All_Employeer(ID):
             temp += Select(id_position, 'ID_position', positions, 'оплата', 'salary')
             print(temp)   
    
-                
-while True:
-    View_Menu()
-    operation =int(input())
-    if operation == 0:
-        break
-    elif operation == 1:
-        Employeers()
-    elif operation == 2:
-        Phones()
-    elif operation == 3:
-        ID_Employeers()
-    elif operation == 4:
-        All_Employeer(int(input ('Введите ID острудника - ')))
-    else:
-        print ('Некорректный ввод: ')
+def Main_View():                
+    while True:
+        View_Menu()
+        operation =int(input())
+        if operation == 0:
+            break
+        elif operation == 1:
+            Employeers()
+        elif operation == 2:
+            Phones()
+        elif operation == 3:
+            ID_Employeers()
+        elif operation == 4:
+            All_Employeer(int(input ('Введите ID острудника - ')))
+        else:
+            print ('Некорректный ввод: ')

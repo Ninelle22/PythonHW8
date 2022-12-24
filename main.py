@@ -1,7 +1,6 @@
 import read_write
 import managment
-employee = read_write.Read_json('employee.json')
-print(employee)
+import view
 
 while True:
     managment.Menu()
@@ -9,14 +8,11 @@ while True:
     if operation == 0:
         break
     elif operation == 1:
-        print(operation)
-        break
+        view.Main_View()
     elif operation == 2:
         print(operation)
-        break
     elif operation == 3:
         print(operation)
-        break   
     else:
         print ('Некорректный ввод: ')
 
