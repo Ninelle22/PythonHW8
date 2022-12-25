@@ -2,6 +2,7 @@ import read_write
 import managment
 import view
 import select_1
+import change
 
 while True:
     managment.Menu()
@@ -13,7 +14,7 @@ while True:
     elif operation == 2:
         select_1.Main_Select()
     elif operation == 3:
-        print(operation)
+        change.Main_Change()
     else:
         print ('Некорректный ввод: ')
 

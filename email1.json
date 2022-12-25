@@ -1,0 +1,22 @@
+[
+ {
+  "ID_employeer":2,
+  "E-mail":"petrov@ma.ru"
+ },
+ {
+  "ID_employeer":3,
+  "E-mail":"fedorov@ma.ru"
+ },
+ {
+  "ID_employeer":4,
+  "E-mail":"feofanov@ma.ru"
+ },
+ {
+  "ID_employeer":5,
+  "E-mail":"gogya@ma.ru"
+ },
+ {
+  "ID_employeer":6,
+  "E-mail":"nurbekov@ma.ru"
+ }
+]
