@@ -15,6 +15,6 @@ def Write_json(list,filename):
 # adresses = Read_json('adresses.json')
 # departments = Read_json('departments.json')
 # email = Read_json('email.json')
-# employeer = Read_json('employeer.json')
+# employee = Read_json('employee.json')
 # phones = Read_json('phones.json')
 # positions = Read_json('positions.json')

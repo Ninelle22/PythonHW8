@@ -1,6 +1,6 @@
 [
 {
-"ID_employeer":1,
+"ID_employee":1,
 "City":"Москва",
 "Street":"улица Академика Бочвара",
 "House":"3",
@@ -9,14 +9,14 @@
 "Flat":"32"
 },
 {
-"ID_employeer":2,
+"ID_employee":2,
 "City":"Москва",
 "Street":"улица Анатолия Живова",
 "House":"4",
 "Flat":"432"
 },
 {
-"ID_employeer":3,
+"ID_employee":3,
 "City":"Москва",
 "Street":"Большой Девятинский переулок",
 "House":"5",
@@ -25,14 +25,14 @@
 "Flat":"223"
 },
 {
-"ID_employeer":4,
+"ID_employee":4,
 "City":"Москва",
 "Street":"улица Борисовские Пруды",
 "House":"4",
 "Flat":"76"
 },
 {
-"ID_employeer":5,
+"ID_employee":5,
 "City":"Москва",
 "Street":"улица Лобачевского",
 "House":"6",
@@ -40,14 +40,14 @@
 "Flat":"56"
 },
 {
-"ID_employeer":6,
+"ID_employee":6,
 "City":"Москва",
 "Street":"Солнечная аллея",
 "House":"2",
 "Flat":"90"
 },
 {
-"ID_employeer":5,
+"ID_employee":5,
 "City":"Волгоград",
 "Street":"улица Лобачевского",
 "House":"6",

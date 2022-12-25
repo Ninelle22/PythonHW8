@@ -30,7 +30,7 @@ def Main_Select():
             print ('Некорректный ввод: ')
 
 def Select_From_Salary(salary_sel, crit):
-    employeer = read_write.Read_json('employeer.json')
+    employee = read_write.Read_json('employee.json')
     positions = read_write.Read_json('positions.json')
     departments = read_write.Read_json('departments.json')
     gender = read_write.Read_json('gender.json')
@@ -47,19 +47,19 @@ def Select_From_Salary(salary_sel, crit):
                     or (crit == 5 and value <= salary_sel)):
                     temp_list.append(positions[i]['ID_position'])
     id_position = 0
-    for i in range(len(employeer)):
-        if employeer[i]['ID_position'] in temp_list:             
-            id_position = employeer[i]['ID_position']            
-            for key,value in employeer[i].items(): 
+    for i in range(len(employee)):
+        if employee[i]['ID_position'] in temp_list:             
+            id_position = employee[i]['ID_position']            
+            for key,value in employee[i].items(): 
                 if key in keys:
                     if key == 'ID_gender':
-                        temp += view.Select(employeer[i][key], 'ID_gender', gender, 'пол', 'gender')                         
+                        temp += view.Select(employee[i][key], 'ID_gender', gender, 'пол', 'gender')                         
                         continue   
                     elif key == 'ID_position':
-                        temp += view.Select(employeer[i][key], 'ID_position', positions, 'должность', 'Name_position')   
+                        temp += view.Select(employee[i][key], 'ID_position', positions, 'должность', 'Name_position')   
                         continue      
                     elif key == 'ID_department':
-                        temp += view.Select(employeer[i][key], 'ID_department', departments, 'отдел', 'Name_department')   
+                        temp += view.Select(employee[i][key], 'ID_department', departments, 'отдел', 'Name_department')   
                         continue  
                     temp += str(value) + " "
             temp += view.Select(id_position, 'ID_position', positions, 'оплата', 'salary')
@@ -72,4 +72,4 @@ def Select_Department_Head():
     for i in departments:        
         temp_list.append(i['Id_department_head'])
     for i in temp_list:
-        view.All_Employeer(i)
+        view.All_employee(i)

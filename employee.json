@@ -1,6 +1,6 @@
 [
 {
-"ID_employeer":1,
+"ID_employee":1,
 "Sec_name":"Иванов",
 "Name":"Иван",
 "Third_name":"Иванович",
@@ -10,7 +10,7 @@
 "ID_department":2
 },
 {
-"ID_employeer":2,
+"ID_employee":2,
 "Sec_name":"Петров",
 "Name":"Сергей",
 "Third_name":"Сергеевич",
@@ -20,7 +20,7 @@
 "ID_department":2
 },
 {
-"ID_employeer":3,
+"ID_employee":3,
 "Sec_name":"Федоров",
 "Name":"Степан",
 "Third_name":"Кузьмич",
@@ -30,7 +30,7 @@
 "ID_department":1
 },
 {
-"ID_employeer":4,
+"ID_employee":4,
 "Sec_name":"Феофанов",
 "Name":"Еремей",
 "Third_name":"Семёнович",
@@ -40,7 +40,7 @@
 "ID_department":3
 },
 { 
-"ID_employeer":5,
+"ID_employee":5,
 "Sec_name":"Гогия",
 "Name":"Елизавета",
 "Third_name":"Никитична",
@@ -50,7 +50,7 @@
 "ID_department":1
 },
 {
-"ID_employeer":6,
+"ID_employee":6,
 "Sec_name":"Нурбеков",
 "Name":"Нирод",
 "Third_name":"Марат оглы",
