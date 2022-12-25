@@ -59,13 +59,13 @@ def Add_Information():
         if operation == str(1):
             Add_Information()
         elif operation == str(2):
-            read_write.Write_json(employeer,'employeer1.json')
+            read_write.Write_json(employeer,'employeer.json')
             if adresses_count < len(adresses):
-                read_write.Write_json(adresses,'adresses1.json')
+                read_write.Write_json(adresses,'adresses.json')
             if email_count < len(email):
-                read_write.Write_json(email,'email1.json')
+                read_write.Write_json(email,'email.json')
             if phones_count < len(phones):
-                read_write.Write_json(phones,'phones1.json')
+                read_write.Write_json(phones,'phones.json')
             break
         elif operation != str(1) or operation != str(2):
             break
@@ -87,10 +87,10 @@ def Delete_Employeer_ID():
         if operation == str(1):
             Add_Information()
         elif operation == str(2):
-            read_write.Write_json(employeer,'employeer1.json')
-            read_write.Write_json(adresses,'adresses1.json')
-            read_write.Write_json(email,'email1.json')
-            read_write.Write_json(phones,'phones1.json')
+            read_write.Write_json(employeer,'employeer.json')
+            read_write.Write_json(adresses,'adresses.json')
+            read_write.Write_json(email,'email.json')
+            read_write.Write_json(phones,'phones.json')
             break
         elif operation != str(1) or operation != str(2):
             break
