@@ -66,7 +66,7 @@ def Phones():
     for j in range(len(employeer)):
         for key,value in employeer[j].items(): 
             if key == 'ID_employeer':
-                temp += Select(employeer[i][key], 'ID_employeer', phones, 'телефон', 'Phone')                           
+                temp += Select(employeer[j][key], 'ID_employeer', phones, 'телефон', 'Phone')                           
                 continue
         temp_list[j] += temp
         print (temp_list[j])

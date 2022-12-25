@@ -2,13 +2,6 @@ import read_write
 import view
 import managment
 
-# def Select_Menu():
-#     print ('Веберите критерий: ')
-#     print ('1 - Отобрать сотрудниов по оплате')
-#     print ('2 - Вывести всю информацию о начальниках отделов')   
-#     print ('3 - Нерализованная функция')
-#     print ('0 - Выход')
-
 def Criterion_Menu():
     managment.Criterion_Menu()    
     while True:
@@ -28,8 +21,6 @@ def Main_Select():
         if operation == 0:
             break
         elif operation == 1:
-            # salary_select = float(input('Введите искомый размер оплаты - '))
-            # criterion = Criterion_Menu()
             Select_From_Salary(float(input('Введите искомый размер оплаты - ')), Criterion_Menu())
         elif operation == 2:
             Select_Department_Head()
