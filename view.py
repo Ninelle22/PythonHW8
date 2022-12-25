@@ -1,14 +1,6 @@
 import read_write
 import managment
 
-# def View_Menu():
-#     print ('Веберите таблицу, которую необходимо отобразить: ')
-#     print ('1 - Таблица сотрудников с должностями и отделами')
-#     print ('2 - Таблица телефонов сотрудников')   
-#     print ('3 - Таблица всех ID сотрудников')
-#     print ('4 - Вывести всю имеющуюся информацию о сотруднике по ID')
-#     print ('0 - Выход')
-
 def Select(ID, type_ID, list, text, select_key):
     temp = ''
     for i in range(len(list)):
