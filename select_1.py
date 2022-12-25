@@ -1,22 +1,16 @@
 import read_write
 import view
+import managment
 
-def Select_Menu():
-    print ('Веберите критерий: ')
-    print ('1 - Отобрать сотрудниов по оплате')
-    print ('2 - Отобрать начальников отделов')   
-    print ('3 - ')
-    print ('0 - Выход')
+# def Select_Menu():
+#     print ('Веберите критерий: ')
+#     print ('1 - Отобрать сотрудниов по оплате')
+#     print ('2 - Вывести всю информацию о начальниках отделов')   
+#     print ('3 - Нерализованная функция')
+#     print ('0 - Выход')
 
 def Criterion_Menu():
-    print ('Веберите выберите критерий поиска оплаты: ')
-    print ('1 - если меньше искомого')
-    print ('2 - если больше искомого')   
-    print ('3 - если равно искомому')
-    print ('4 - если не меньше искомого')
-    print ('5 - если не больше искомого')
-    print ('0 - Выход')
-    
+    managment.Criterion_Menu()    
     while True:
         criterion = int(input())
         if criterion == 0:
@@ -29,7 +23,7 @@ def Criterion_Menu():
 
 def Main_Select():
     while True:
-        Select_Menu()
+        managment.Select_Menu()
         operation =int(input())
         if operation == 0:
             break
@@ -38,7 +32,7 @@ def Main_Select():
             # criterion = Criterion_Menu()
             Select_From_Salary(float(input('Введите искомый размер оплаты - ')), Criterion_Menu())
         elif operation == 2:
-            print (operation)
+            Select_Department_Head()
         elif operation == 3:
             print ('В разработке')
         else:
@@ -80,3 +74,11 @@ def Select_From_Salary(salary_sel, crit):
             temp += view.Select(id_position, 'ID_position', positions, 'оплата', 'salary')
             print(temp)       
             temp = ''
+
+def Select_Department_Head():
+    departments = read_write.Read_json('departments.json')
+    temp_list=[]
+    for i in departments:        
+        temp_list.append(i['Id_department_head'])
+    for i in temp_list:
+        view.All_Employeer(i)
